@@ -23,12 +23,12 @@ const start = () => {
         const text = msg.text;
         const chatId = msg.chat.id;
         if (text == '/start') {
-           return bot.sendMessage(chatId, `Hello, ${msg.from.last_name} ${msg.from.last_name} I am your telegram bot. I am here to help you with your problems`, buttonsSelect)
+           return bot.sendMessage(chatId, `Hello, ${msg.from.first_name} ${msg.from.last_name} I am your telegram bot. I am here to help you with your problems`, buttonsSelect)
         }
         if (text === '/info') {
             return bot.sendMessage(chatId, `bla bla bla go to our web site`,)
         }
-        console.log(msg.text)
+        console.log(msg)
         return bot.sendMessage(chatId, `Your msg ${msg.text}`)
         
 
